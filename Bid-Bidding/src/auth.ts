@@ -1,8 +1,8 @@
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import NextAuth, { DefaultSession } from "next-auth";
 import Google from "next-auth/providers/google";
-import { database } from "@/db/database";
-import { accounts, sessions, users, verificationTokens } from "@/db/schema";
+import { database } from "@/app/db/database";
+import { accounts, sessions, users, verificationTokens } from "@/app/db/schema";
 
 declare module "next-auth" {
   /**

@@ -1,5 +1,5 @@
 import { ItemCard } from "@/app/item-card";
-import { database } from "@/db/database";
+import { database } from "@/app/db/database";
 
 export default async function HomePage() {
   const allItems = await database.query.items.findMany();
